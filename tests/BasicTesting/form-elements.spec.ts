@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { FormElementsPage } from '../pages/FormElementsPage';
+import { FormElementsPage } from '../../pages/BasicTesting/FormElementsPage';
 
 /**
  * Form Elements Automation Tests
