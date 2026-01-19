@@ -62,6 +62,16 @@ export default defineConfig({
             use: { ...devices['Desktop Chrome'] },
         },
         {
+            name: 'chromium-slow',
+            use: {
+                ...devices['Desktop Chrome'],
+                headless: false, // Always run headed for visual inspection
+                launchOptions: {
+                    slowMo: 3000, // 3000ms delay between actions
+                },
+            },
+        },
+        {
             name: 'firefox',
             use: { ...devices['Desktop Firefox'] },
         },
